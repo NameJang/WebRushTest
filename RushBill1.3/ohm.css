@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(58, 97, 225);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    color: rgb(18, 73, 255);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar h{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.navbar i{
+    font-size: 1rem;
+    color: #df5151;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+
+.navbar a.bill {
+    font-size: 15px;
+    margin-left: 1rem;
+    margin-top: 3px;
+    border-bottom: 3px solid transparent;
+    background-color: #000000;
+    border-radius: 20%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar a.active {
+    font-size: 15px;
+    margin-left: 1rem;
+    margin-top: 3px;
+    border-bottom: 3px solid transparent;
+    background-color: #007bff;
+    border-radius: 20%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar a.bill:hover {
+    border-radius: 25%;
+    border: 3px solid rgb(202, 202, 202);
+}
+
+.navbar a.active:hover {
+    border-radius: 25%;
+    border: 3px solid rgb(202, 202, 202);
+}
+
+.navbar a:hover {
+    color: rgb(8, 73, 255);
+    border-bottom: 3px solid rgb(18, 73, 255);
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+
+span{
+    color: blue;
+}
+
+span1{
+    color: rgb(255, 255, 255);
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Athiti", sans-serif;
+    font-weight: 200;
+}
+.home-content h3{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.home-content h1{
+    font-size: 3rem;
+}
+
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 161, 255, 0.871);
+    font-family: "Athiti", sans-serif;   
+}
+
+
+.about-content{
+    max-width: 800%;
+    margin: 50px;
+    background-color: #fff;
+    padding: 20px;  
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: "Athiti", sans-serif; 
+    
+}
+
+.about-content h2{
+    font-size: 5rem;
+    color: rgb(255, 168, 168);
+    font-family: "Athiti", sans-serif;
+    font-weight: 1000;
+
+}
+
+.about-content h3{
+    color: rgb(255, 142, 142);
+    font-family: "Athiti", sans-serif;
+    font-weight: 500;
+
+}
+
+.about img{
+    position: relative;
+    width: 30vw;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    max-width: 800%; /* Adjust as needed */
+    margin: 50px;
+    background-color: #fff;
+    padding: 20px;  
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: "Athiti", sans-serif; 
+}
+
+.info {
+    text-align: center; /* Center text inside the info div */
+}
+
+.info li {
+    list-style: none; /* Remove default list styling */
+    margin-bottom: 10px; /* Add spacing between each info item */
+}
+
+
+.container span{
+    color: rgb(0, 64, 255);
+    font-family: "Athiti", sans-serif;
+    font-weight: 900;
+}
+
+.container li{
+    color: rgb(0, 0, 0);
+    font-family: "Athiti", sans-serif;
+    font-weight: 900;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.certificate {
+    text-align: center;
+}
+.certificate h2 {
+    font-family: "Athiti", sans-serif;
+    margin-top: 0;
+    font-size: 32px;
+    color: #007bff;
+}
+.certificate h3{
+    font-family: "Athiti", sans-serif;
+}
+.certificate p {
+    font-family: "Athiti", sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.signature {
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.signature p {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.signature h2 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #007bff;
+}
+.signature img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.signature:hover {
+    transform: translateY(-5px);
+}
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+} 
+ 
+
+
+
+
+.contacticon {
+    font-family: "Athiti", sans-serif; 
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon {
+    text-align: center;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: translateY(-10px);
+}
+
+.contact-icon i {
+    font-size: 36px;
+    color: #ff5900;
+    margin-bottom: 10px;
+}
+
+.contact-icon F {
+    font-size: 36px;
+    color: #0062ff;
+    margin-bottom: 10px;
+}
+.contact-icon e {
+    font-size: 36px;
+    color: #ff4343;
+    margin-bottom: 10px;
+}
+
+.contact-icon c {
+    font-size: 36px;
+    color: #00c20d;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.contact-icon p {
+    font-family: "Athiti", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+}
+
+.contact-icon g {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.contact-icon d {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* silde */
+.home-img img {
+    position: relative;
+    cursor: pointer;
+    width: 16vw;
+    max-width: 100%; /* Ensure image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular with a slightly smaller radius */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .home-img img {
+        max-width: 70%; /* Adjust maximum width for smaller screens */
+    }
+    .about-content {
+        margin-right: 0;
+    }
+}
+@media (max-width: 1080px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        margin-top: 40px; /* Adjust the margin to create space between the container and the slider */
+    }
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .slider {
+        height: 200px; /* Adjust the height for smaller screens */
+    }
+
+    .prev,
+    .next {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 15px; /* Adjust button padding for smaller screens */
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar by default on small screens */
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 4rem; /* Adjust the top position */
+        left: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255); /* Change background color */
+        padding: 1rem;
+        border-bottom: 5px solid rgb(58, 97, 225); /* Keep the same border as header */
+        z-index: 99; /* Lower z-index than header */
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-bottom: 1rem; /* Add margin between navbar items */
+    }
+
+    .logo {
+        margin-left: 1rem; /* Adjust logo margin */
+    }
+}
